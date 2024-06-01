@@ -1,20 +1,20 @@
 <template>
   <li class="card">
-    <img :src="props.character.image" :alt="props.character.name" />
+    <img :src="props.character?.image" :alt="props.character?.name" />
 
     <div class="card__info">
-      <h3>{{ props.character.name }}</h3>
+      <h3>{{ props.character?.name }}</h3>
       <p>
-        {{ props.character.status }} -
-        {{ props.character.species }}
+        {{ props.character?.status }} -
+        {{ props.character?.species }}
       </p>
       <p>
         <span>Last known location:</span><br />
-        {{ props.character.location.name }}
+        {{ props.character?.location.name }}
       </p>
       <p>
         <span>First seen:</span><br />
-        {{ props.character.origin.name }}
+        {{ props.character?.origin.name }}
       </p>
     </div>
   </li>
